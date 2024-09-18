@@ -1,4 +1,4 @@
-import { LoginPage } from "./features/login/pages/login-page";
+import { LoginPage } from "./features/auth/pages/login-page";
 
 
 function App() {
