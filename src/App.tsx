@@ -1,13 +1,11 @@
-import { Button } from "./components/ui/button";
-import { Input } from "./components/ui/input";
+import { LoginPage } from "./features/login/pages/login-page";
 
 
 function App() {
 
   return (
-    <div className="p-6" >
-      <Input />
-      <Button>Click me</Button>
+    <div className="" >
+      <LoginPage />
     </div>
   );
 }
