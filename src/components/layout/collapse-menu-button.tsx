@@ -1,5 +1,3 @@
-"use client";
-
 import {Link} from "react-router-dom"
 import { useState } from "react";
 import { ChevronDown, Dot, LucideIcon } from "lucide-react";
@@ -168,7 +166,6 @@ export function CollapseMenuButton({
             </Link>
           </DropdownMenuItem>
         ))}
-        <ChevronDown className="fill-border" />
       </DropdownMenuContent>
     </DropdownMenu>
   );
