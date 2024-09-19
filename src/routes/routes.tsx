@@ -2,6 +2,8 @@ import { createBrowserRouter, Navigate, Outlet } from "react-router-dom";
 import { LoginPage } from "../features/auth/pages/login-page";
 import { PrivateRoute } from "./private-route";
 import PageNotFound from "./page-not-found";
+import { HomePage } from "../features/home/pages/home-page";
+import DefaultPanelLayout from "../components/layout/default-panel-layout";
 
 export const router = createBrowserRouter([
   {
@@ -13,13 +15,13 @@ export const router = createBrowserRouter([
     element: <LoginPage />,
   },
   {
-    path: "/app",
-    element: <PrivateRoute element={<Outlet />} />,
+    path: "/",
+    element: <DefaultPanelLayout  />,
     children: [
-      // {
-      //   path: "dashboard",
-      //   element: <Dashboard />,
-      // },
+      {
+        path: "/home",
+        element: <HomePage />,
+      },
       // {
       //   path: "profile",
       //   element: <Profile />,
